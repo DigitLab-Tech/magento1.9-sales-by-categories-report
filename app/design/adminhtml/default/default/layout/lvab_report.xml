@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_product_sold_index_index>
+        <reference name="content">
+            <block type="lvab_report/adminhtml_product_product" template="report/grid/container.phtml" name="lvab_product_sold_grid_container">
+                <block type="lvab_report/adminhtml_filter_form" name="grid.filter.form" />
+            </block>
+        </reference>
+    </adminhtml_product_sold_index_index>
+</layout>
