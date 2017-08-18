@@ -1,1 +1,1 @@
-# magento-sales-by-categories-report
+# magento1.9-sales-by-categories-report
