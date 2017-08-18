@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <lvab_report translate="title" module="lvab_report">
+                                        <title>Report</title>
+                                    </lvab_report>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+					<report>
+						<children>
+							<lvab_report translate="title" module="lvab_report">
+								<title>Rapport Lvab</title>
+								<children>
+									<productsold translate="title" module="lvab_report">
+										<title>Vente pas categories</title>
+										<sort_order>0</sort_order>
+									</productsold>
+								</children>
+							</lvab_report>
+						</children>
+					</report>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+		<report>
+			<children>
+				<lvab_report translate="title" module="lvab_report">
+					<title>Rapport Lvab</title>
+					<sort_order>85</sort_order>
+					<children>
+						<productsold translate="title" module="lvab_report">
+							<title>Vente par catégories</title>
+							<action>adminhtml/product_sold_index</action>
+							<sort_order>0</sort_order>
+						</productsold>
+					</children>
+				</lvab_report>
+			</children>
+		</report>
+    </menu>
+</config>
